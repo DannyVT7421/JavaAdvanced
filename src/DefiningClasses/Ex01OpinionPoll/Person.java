@@ -2,13 +2,14 @@ package DefiningClasses.Ex01OpinionPoll;
 
 public class Person {
     private String name;
-    private  int age;
+    private int age;
 
-    public Person(String name, int age){
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
-    public int getAge(){
+
+    public int getAge() {
         return this.age;
     }
 
@@ -17,7 +18,7 @@ public class Person {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return String.format("%s - %d", this.name, this.age);
     }
 }
