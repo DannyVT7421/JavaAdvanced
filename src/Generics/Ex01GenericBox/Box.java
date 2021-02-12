@@ -9,6 +9,6 @@ public class Box<T> {
 
     @Override
     public String toString() {
-        return String.format("%s: %s", this.value.getClass(), value.toString());
+        return String.format("%s: %s", this.value.getClass().getName(), value.toString());
     }
 }
