@@ -43,7 +43,7 @@ public class Main {
                 }
             }
         }
-        if (trainers != null) {
+        if (trainers.size() != 0) {
             trainers.entrySet().stream().sorted((f, s) -> Integer.compare(s.getValue().getBadge(), f.getValue().getBadge()))
                     .forEach(e -> System.out.println(e.getValue()));
         }

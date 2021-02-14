@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int n = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < n; i++) {
-            int input = Integer.parseInt(scanner.nextLine());
+            int input = scanner.nextInt();
             Box<Integer> box = new Box<>(input);
             System.out.println(box);
         }

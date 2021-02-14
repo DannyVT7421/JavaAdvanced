@@ -1,6 +1,5 @@
-package Generics.Ex03GenericSwapMethodStrings;
+package Generics.Ex05GenericCountMethodStrings;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -12,11 +11,7 @@ public class Main {
             String value = scanner.nextLine();
             box.addValue(value);
         }
-        int[] indexes = Arrays.stream(scanner.nextLine().split("\\s+"))
-                .mapToInt(Integer::parseInt).toArray();
-        int first = indexes[0];
-        int second = indexes[1];
-        box.swap(first,second);
-        System.out.println(box);
+        String toCompare = scanner.nextLine();
+        System.out.println(box.countGraterElements(toCompare));
     }
 }
